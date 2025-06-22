@@ -56,3 +56,10 @@ npm install
 
 ### 3. Configure environment variables
 Create a .env file in the root directory with the following variables:
+
+```ini
+NODE_ENV=development
+DATABASE_URL="your-mongodb-connection-string"
+PORT=5000
+```
+Replace "your-mongodb-connection-string" with your actual MongoDB connection string (for example, from MongoDB Atlas).
