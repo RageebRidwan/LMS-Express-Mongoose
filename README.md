@@ -28,3 +28,31 @@ src/
 ├── utils/ # Response formatters
 ├── server.ts # App entry point
 ```
+---
+
+## 🧑‍💻 Tech Stack
+
+- **Backend**: Express + TypeScript
+- **Database**: MongoDB with Mongoose
+- **Validation**: Mongoose built-in validators
+- **Error Handling**: Custom global handler with detailed validation errors
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/library-management-api.git
+cd library-management-api
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+Create a .env file in the root directory with the following variables:
