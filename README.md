@@ -64,6 +64,8 @@ PORT=5000
 ```
 Replace "your-mongodb-connection-string" with your actual MongoDB connection string (for example, from MongoDB Atlas).
 
+---
+
 ### 4. Start the Server
 
 ```bash
