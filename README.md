@@ -28,6 +28,7 @@ src/
 ├── utils/ # Response formatters
 ├── server.ts # App entry point
 ```
+
 ---
 
 ## 🧑‍💻 Tech Stack
@@ -124,8 +125,6 @@ npm run dev
 ## 🎥 Video Walkthrough
 
 ### [🔗 Watch Demo](https://library-management-api-m61d.onrender.com)
-
----
 
 ## 🌐 Live Link
 
