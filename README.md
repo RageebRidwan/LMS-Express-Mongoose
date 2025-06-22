@@ -89,3 +89,33 @@ npm run dev
 | POST   | `/api/borrow` | Borrow a book          |
 | GET    | `/api/borrow` | Borrowed books summary |
 
+---
+
+## 📦 Response Format
+
+### ✅ Success
+```json
+{
+  "success": true,
+  "message": "Book created successfully",
+  "data": { ... }
+}
+```
+
+### ❌ Error
+```json
+{
+  "message": "Validation failed",
+  "success": false,
+  "error": {
+    "name": "ValidationError",
+    "errors": {
+      "copies": {
+        "message": "Copies must be a positive number",
+        ...
+      }
+    }
+  }
+}
+```
+
