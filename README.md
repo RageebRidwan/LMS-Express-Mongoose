@@ -124,7 +124,7 @@ npm run dev
 
 ## 🎥 Video Walkthrough
 
-### [🔗 Watch Demo](https://library-management-api-m61d.onrender.com](https://drive.google.com/file/d/1ufmiB3s1yLRKAYN5K7JAUhb6Z75bOvgd/view?usp=sharing)
+### [🔗 Watch Demo](https://drive.google.com/file/d/1ufmiB3s1yLRKAYN5K7JAUhb6Z75bOvgd/view?usp=sharing)
 
 ## 🌐 Live Link
 
