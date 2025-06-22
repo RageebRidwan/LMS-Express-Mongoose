@@ -69,3 +69,14 @@ Replace "your-mongodb-connection-string" with your actual MongoDB connection str
 ```bash
 npm run dev
 ```
+
+## 📬 API Endpoints
+
+###🔹 Books
+| Method | Endpoint             | Description       |
+|--------|----------------------|-------------------|
+| POST   | `/api/books`         | Create a new book |
+| GET    | `/api/books`         | Get all books     |
+| GET    | `/api/books/:bookId` | Get book by ID    |
+| PUT    | `/api/books/:bookId` | Update book       |
+| DELETE | `/api/books/:bookId` | Delete book       |
