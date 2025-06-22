@@ -80,3 +80,10 @@ npm run dev
 | GET    | `/api/books/:bookId` | Get book by ID    |
 | PUT    | `/api/books/:bookId` | Update book       |
 | DELETE | `/api/books/:bookId` | Delete book       |
+
+### 🔹 Borrow
+| Method | Endpoint      | Description            |
+| ------ | ------------- | ---------------------- |
+| POST   | `/api/borrow` | Borrow a book          |
+| GET    | `/api/borrow` | Borrowed books summary |
+
