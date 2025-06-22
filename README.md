@@ -25,6 +25,6 @@ src/
 │ ├── book/ # Book model, controller, routes, interface
 │ ├── borrow/ # Borrow model, controller, routes, interface
 │ └── routes/ # All route mappings
-├── utils/ # Error formatter
+├── utils/ # Response formatters
 ├── server.ts # App entry point
 ```
