@@ -125,4 +125,13 @@ npm run dev
 
 ### [🔗 Watch Demo](https://library-management-api-m61d.onrender.com)
 
+---
+
+## 🌐 Live Link
+
+### [🚀 Deployed on Render](https://library-management-api-m61d.onrender.com)
+
+---
+
+
 
