@@ -18,7 +18,7 @@ A RESTful API for managing books and borrowing in a library, built with **Expres
 ---
 
 ## 📁 Project Structure
-
+```
 src/
 ├── config/ # Environment & config
 ├── modules/
@@ -27,3 +27,4 @@ src/
 │ └── routes/ # All route mappings
 ├── utils/ # Error formatter
 ├── server.ts # App entry point
+```
