@@ -10,6 +10,15 @@ app.use(cors());
 app.use(express.json());
 // Routes
 app.use(router);
+// Welcome
+app.use("", (req: Request, res: Response) => {
+  res.json({
+    success: true,
+    message: "Welcome to the Library Management System API 📚✨",
+    info: "Explore books, borrow and manage with ease!",
+  });
+});
+
 // Global Error Handler
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   if (err.name === "ValidationError") {
