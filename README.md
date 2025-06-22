@@ -72,7 +72,7 @@ npm run dev
 
 ## 📬 API Endpoints
 
-###🔹 Books
+### 🔹 Books
 | Method | Endpoint             | Description       |
 |--------|----------------------|-------------------|
 | POST   | `/api/books`         | Create a new book |
