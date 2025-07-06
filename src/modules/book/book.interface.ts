@@ -9,7 +9,8 @@ export interface IBook {
     | "SCIENCE"
     | "HISTORY"
     | "BIOGRAPHY"
-    | "FANTASY";
+    | "FANTASY"
+    | "Not selected";
   isbn: string;
   description?: string;
   copies: number;

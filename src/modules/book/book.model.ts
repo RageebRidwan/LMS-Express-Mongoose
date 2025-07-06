@@ -1,8 +1,13 @@
 import { Model, Schema } from "mongoose";
 import { model } from "mongoose";
 import { BookInstanceMethods, IBook } from "./book.interface";
+import { NextFunction } from "express";
 
-export const bookSchema = new Schema<IBook, Model<IBook,{}, BookInstanceMethods>, BookInstanceMethods>(
+export const bookSchema = new Schema<
+  IBook,
+  Model<IBook, {}, BookInstanceMethods>,
+  BookInstanceMethods
+>(
   {
     title: {
       type: String,
@@ -22,6 +27,7 @@ export const bookSchema = new Schema<IBook, Model<IBook,{}, BookInstanceMethods>
           "HISTORY",
           "BIOGRAPHY",
           "FANTASY",
+          "Not selected"
         ],
         message: "Genre must be a valid category",
       },
@@ -50,6 +56,14 @@ export const bookSchema = new Schema<IBook, Model<IBook,{}, BookInstanceMethods>
     timestamps: true,
   }
 );
+bookSchema.pre("save", function (next) {
+  this.title = this.title.trim();
+  this.author = this.author.trim();
+  next();
+});
+bookSchema.post("save", function(doc){
+  console.log(`✅ Book "${doc.title}" saved successfully!`);
+})
 bookSchema.method("borrow", async function (quantity: number) {
   if (this.copies < quantity) {
     throw new Error("Not enough copy available");
@@ -60,4 +74,7 @@ bookSchema.method("borrow", async function (quantity: number) {
   }
   await this.save();
 });
-export const Book = model<IBook, Model<IBook,{}, BookInstanceMethods>>("Book", bookSchema);
+export const Book = model<IBook, Model<IBook, {}, BookInstanceMethods>>(
+  "Book",
+  bookSchema
+);
